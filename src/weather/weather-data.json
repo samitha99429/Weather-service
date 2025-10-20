@@ -1,0 +1,13 @@
+{
+  "BKK": {
+    "forecast": [
+      { "date": "2025-10-15", "tempMin": 27, "tempMax": 33, "condition": "Sunny" },
+      { "date": "2025-10-16", "tempMin": 28, "tempMax": 34, "condition": "Cloudy" }
+    ]
+  },
+  "CMB": {
+    "forecast": [
+      { "date": "2025-10-15", "tempMin": 26, "tempMax": 31, "condition": "Rainy" }
+    ]
+  }
+}
