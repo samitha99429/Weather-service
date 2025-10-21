@@ -13,7 +13,12 @@ export class WeatherService {
   private failRate = parseFloat(process.env.WEATHER_FAIL_RATE ?? '0');
 
   constructor() {
-    this.filePath = path.join(process.cwd(), 'src', 'weather', 'weather-data.json');
+    this.filePath = path.join(
+      process.cwd(),
+      'src',
+      'weather',
+      'weather-data.json',
+    );
     this.loadData();
   }
 

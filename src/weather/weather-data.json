@@ -1,23 +1,88 @@
 {
   "BKK": {
     "forecast": [
-      { "date": "2025-10-15", "tempMin": 27, "tempMax": 33, "condition": "Sunny" },
-      { "date": "2025-10-16", "tempMin": 28, "tempMax": 34, "condition": "Cloudy" },
-      { "date": "2025-10-17", "tempMin": 34, "tempMax": 34, "condition": "Sunny" },
-      { "date": "2025-10-18", "tempMin": 26, "tempMax": 30, "condition": "Stormy" },
-       { "date": "2025-10-19", "tempMin": 32, "tempMax": 34, "condition": "Sunny" },
-       { "date": "2025-10-20", "tempMin": 12, "tempMax": 33, "condition": "cold" },
-       { "date": "2025-10-21", "tempMin": 30, "tempMax": 33, "condition": "Sunny" }           
+      {
+        "date": "2025-10-15",
+        "tempMin": 27,
+        "tempMax": 33,
+        "condition": "Sunny"
+      },
+      {
+        "date": "2025-10-16",
+        "tempMin": 28,
+        "tempMax": 34,
+        "condition": "Cloudy"
+      },
+      {
+        "date": "2025-10-17",
+        "tempMin": 34,
+        "tempMax": 34,
+        "condition": "Sunny"
+      },
+      {
+        "date": "2025-10-18",
+        "tempMin": 26,
+        "tempMax": 30,
+        "condition": "Stormy"
+      },
+      {
+        "date": "2025-10-19",
+        "tempMin": 32,
+        "tempMax": 34,
+        "condition": "Sunny"
+      },
+      {
+        "date": "2025-10-20",
+        "tempMin": 12,
+        "tempMax": 33,
+        "condition": "cold"
+      },
+      {
+        "date": "2025-10-21",
+        "tempMin": 30,
+        "tempMax": 33,
+        "condition": "Sunny"
+      }
     ]
   },
   "CMB": {
     "forecast": [
-      { "date": "2025-10-15", "tempMin": 26, "tempMax": 31, "condition": "Rainy" },
-       { "date": "2025-10-16", "tempMin": 24, "tempMax": 31, "condition": "Rainy" },
-        { "date": "2025-10-17", "tempMin": 22, "tempMax": 31, "condition": "Rainy" },
-         { "date": "2025-10-18", "tempMin": 30, "tempMax": 31, "condition": "Rainy" },
-          { "date": "2025-10-19", "tempMin": 31, "tempMax": 32, "condition": "Rainy" },
-           { "date": "2025-10-20", "tempMin": 28, "tempMax": 32, "condition": "Rainy" }
+      {
+        "date": "2025-10-15",
+        "tempMin": 26,
+        "tempMax": 31,
+        "condition": "Rainy"
+      },
+      {
+        "date": "2025-10-16",
+        "tempMin": 24,
+        "tempMax": 31,
+        "condition": "Rainy"
+      },
+      {
+        "date": "2025-10-17",
+        "tempMin": 22,
+        "tempMax": 31,
+        "condition": "Rainy"
+      },
+      {
+        "date": "2025-10-18",
+        "tempMin": 30,
+        "tempMax": 31,
+        "condition": "Rainy"
+      },
+      {
+        "date": "2025-10-19",
+        "tempMin": 31,
+        "tempMax": 32,
+        "condition": "Rainy"
+      },
+      {
+        "date": "2025-10-20",
+        "tempMin": 28,
+        "tempMax": 32,
+        "condition": "Rainy"
+      }
     ]
   }
 }
