@@ -1,11 +1,16 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import * as fs from 'fs';
 import * as path from 'path';
 
 @Injectable()
 export class WeatherService {
+  private readonly logger = new Logger(WeatherService.name);
   private filePath: string;
   private weatherData: Record<string, any> = {};
+
+  // Runtime values
+  private delayMs = parseInt(process.env.WEATHER_DELAY_MS ?? '0');
+  private failRate = parseFloat(process.env.WEATHER_FAIL_RATE ?? '0');
 
   constructor() {
     this.filePath = path.join(process.cwd(), 'src', 'weather', 'weather-data.json');
@@ -25,17 +30,13 @@ export class WeatherService {
   }
 
   async getWeather(destination: string) {
-    const delayMs = parseInt(process.env.WEATHER_DELAY_MS ?? '0'); 
-const failRate = parseFloat(process.env.WEATHER_FAIL_RATE ?? '0'); // default to '0' if undefined
-
-
-    //simulate delay
-    if (delayMs > 0) {
-      await new Promise((res) => setTimeout(res, delayMs));
+    // Simulate delay
+    if (this.delayMs > 0) {
+      await new Promise((res) => setTimeout(res, this.delayMs));
     }
 
-    //simulate random failure
-    if (Math.random() < failRate) {
+    // Simulate random failure
+    if (Math.random() < this.failRate) {
       throw new Error('Simulated weather service failure');
     }
 
@@ -50,5 +51,23 @@ const failRate = parseFloat(process.env.WEATHER_FAIL_RATE ?? '0'); // default to
     this.weatherData[destination] = { forecast };
     this.saveData();
     return { message: 'Weather forecast added successfully!' };
+  }
+
+  //Runtime config management
+  setDelayMs(value: number) {
+    this.delayMs = value;
+    this.logger.log(`Weather delay updated to ${value}ms`);
+  }
+
+  setFailRate(value: number) {
+    this.failRate = value;
+    this.logger.log(`Weather fail rate updated to ${value}`);
+  }
+
+  getConfig() {
+    return {
+      delayMs: this.delayMs,
+      failRate: this.failRate,
+    };
   }
 }

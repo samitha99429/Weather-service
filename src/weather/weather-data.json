@@ -2,7 +2,9 @@
   "BKK": {
     "forecast": [
       { "date": "2025-10-15", "tempMin": 27, "tempMax": 33, "condition": "Sunny" },
-      { "date": "2025-10-16", "tempMin": 28, "tempMax": 34, "condition": "Cloudy" }
+      { "date": "2025-10-16", "tempMin": 28, "tempMax": 34, "condition": "Cloudy" },
+      { "date": "2025-10-17", "tempMin": 34, "tempMax": 34, "condition": "Sunny" },
+      { "date": "2025-10-18", "tempMin": 26, "tempMax": 34, "condition": "Stormy" }
     ]
   },
   "CMB": {
